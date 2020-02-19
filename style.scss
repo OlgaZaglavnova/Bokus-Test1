@@ -1,0 +1,36 @@
+%cellstyle{
+    width: 150px;
+    text-align: left;
+    border: 1px solid lightgray;
+}
+
+.app__h3{
+    font-weight: bold;
+    color: dimgray;
+    line-height: 40px;
+}
+.table{
+    border-collapse: collapse;
+    outline: 3px solid dimgray;
+    
+    &__header{
+        background-color: #00589e;
+        color: white;
+        height: 40px;
+        font-size: 18px;
+        vertical-align: bottom;
+        padding: 3px;
+        text-align: left;
+    }
+    &__cell{
+        @extend %cellstyle;
+    }
+    &__cell--bold{
+        @extend %cellstyle;
+        font-weight: bold;
+    }
+    &__delimiter{
+        height: 20px;
+        background-color: lightgray;
+    }
+}
